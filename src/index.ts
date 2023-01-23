@@ -1,9 +1,9 @@
-import {ApplicationConfig, JimbiApplication} from './application';
+import {ApplicationConfig, NimbiApplication} from './application';
 
 export * from './application';
 
 export async function main(options: ApplicationConfig = {}) {
-  const app = new JimbiApplication(options);
+  const app = new NimbiApplication(options);
   await app.boot();
   await app.start();
 
